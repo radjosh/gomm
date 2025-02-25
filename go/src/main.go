@@ -44,3 +44,13 @@ func main() {
 		os.Exit(1)
 	}
 }
+
+/* 
+ * run with go run main.go
+ * front-end should point to external ip address ie outside of the container
+ *
+ * frontend and backend containers need to be on the same docker network
+ * docker network ls
+ * docker network connect <network name> gomm
+ * docker network connect <network name> reactmm // or whatever the frontend container is called
+ */
